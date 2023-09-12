@@ -1,0 +1,11 @@
+﻿################################################################################
+# Este arquivo .gitignore foi criado automaticamente pelo Microsoft(R) Visual Studio.
+################################################################################
+
+/JwtStore.Api/obj
+/.vs/SistemaLogin
+/JwtStore.Api/appsettings.json
+/JwtStore.Api/appsettings.Development.json
+/JwtStore.Api/Properties
+/JwtStore.Core/obj
+/JwtStore.Infra/obj

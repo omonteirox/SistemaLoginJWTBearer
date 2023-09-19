@@ -12,3 +12,4 @@
 /.vs/ProjectEvaluation
 /JwtStore.Core/bin/Debug/net7.0
 /JwtStore.Infra/bin/Debug/net7.0
+/JwtStore.Api/bin/Debug/net7.0

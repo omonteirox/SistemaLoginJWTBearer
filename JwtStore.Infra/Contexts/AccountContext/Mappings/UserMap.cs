@@ -1,4 +1,4 @@
-﻿using JwtStore.Core.AccountContext.Entities;
+﻿using JwtStore.Core.Contexts.AccountContext.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JwtStore.Infra.AccountContext.Mappings
+namespace JwtStore.Infra.Contexts.AccountContext.Mappings
 {
     public class UserMap : IEntityTypeConfiguration<User>
     {
@@ -28,7 +28,7 @@ namespace JwtStore.Infra.AccountContext.Mappings
                 .IsRequired();
 
             builder.Property(x => x.Image)
-                .HasColumnName("Name")
+                .HasColumnName("Image")
                 .HasColumnType("VARCHAR")
                 .HasMaxLength(255)
                 .IsRequired();
@@ -62,8 +62,7 @@ namespace JwtStore.Infra.AccountContext.Mappings
 
             builder.OwnsOne(x => x.Password)
               .Property(x => x.Hash)
-              .HasColumnName("PasswordHash")
-              .IsRequired();
+              .HasColumnName("PasswordHash").IsRequired();
 
             builder.OwnsOne(x => x.Password)
               .Property(x => x.ResetCode)

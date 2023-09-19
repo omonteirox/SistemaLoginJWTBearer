@@ -9,3 +9,6 @@
 /JwtStore.Api/Properties
 /JwtStore.Core/obj
 /JwtStore.Infra/obj
+/.vs/ProjectEvaluation
+/JwtStore.Core/bin/Debug/net7.0
+/JwtStore.Infra/bin/Debug/net7.0
